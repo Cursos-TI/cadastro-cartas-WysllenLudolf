@@ -8,6 +8,7 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
  
   //Variáveis criadas para a carta 1
+
   char estado1[20] = "Amazonas";
   char codigodacartaA[10] = "A01";
   char nomedacidadeA[50] = "Manaus";
@@ -16,7 +17,8 @@ int main() {
   float pibA = 35.0;
   int pontoturisticoA = 15;
 
-   //Variáveis criadas para a carta 2
+  //Variáveis criadas para a carta 2
+
   char estado2[20] = "Bahia";
   char codigodacartaB[10] = "B01";
   char nomedacidadeB[50] = "Salvador";
@@ -26,6 +28,8 @@ int main() {
   int pontoturisticoB = 16;
   
   // Área para entrada de dados
+
+  //comandos para que o cliente inclua os dados das cartas de forma interativa:
 
   printf("Digite o nome do Estado: \n");
   scanf("%s", &estado1, &estado2);
@@ -50,12 +54,14 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
+  //comandos para a impressão das informações na tela
+
   printf("Estado: %s\n", estado1, estado2);
   printf("Cidade: %s\n", nomedacidadeA, nomedacidadeB);
   printf("Código: %s\n", codigodacartaA, codigodacartaB);
   printf("População: %d\n", populacaoA, populacaoB);
-  printf("Área Km²: %.2f\n", areakm2A, areakm2B);
-  printf("PIB: %.2f\n", pibA, pibB);
+  printf("Área Km²: %.0f Km²\n", areakm2A, areakm2B);
+  printf("PIB: %.0f Bilhões\n", pibA, pibB);
   printf("Pontos Turísticos: %d\n", pontoturisticoA, pontoturisticoB);
   
 
