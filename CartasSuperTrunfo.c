@@ -6,21 +6,23 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-
+ 
+  //Variáveis criadas para a carta 1
   char estado1[20] = "Amazonas";
   char codigodacartaA[10] = "A01";
   char nomedacidadeA[50] = "Manaus";
-  int populacaoA = 2303732;
-  float areakm2A = 11.401092;
-  float pibA = 35.000000000;
+  int populacaoA = 2300;
+  float areakm2A = 11000000;
+  float pibA = 35.0;
   int pontoturisticoA = 15;
 
+   //Variáveis criadas para a carta 2
   char estado2[20] = "Bahia";
   char codigodacartaB[10] = "B01";
   char nomedacidadeB[50] = "Salvador";
-  int populacaoB = 2564204;
-  float areakm2B = 693.453;
-  float pibB = 62.954000000;
+  int populacaoB = 2500;
+  float areakm2B = 600000;
+  float pibB = 62.0;
   int pontoturisticoB = 16;
   
   // Área para entrada de dados
@@ -29,7 +31,7 @@ int main() {
   scanf("%s", &estado1, &estado2);
 
   printf("Digite a cidade: \n");
-  scanf("%s", &nomedacidadeA, nomedacidadeB);
+  scanf("%s", &nomedacidadeA, &nomedacidadeB);
 
   printf("Informe o código da carta: \n");
   scanf("%s", &codigodacartaA, &codigodacartaB);
@@ -46,18 +48,15 @@ int main() {
   printf("Quantos são os pontos turísticos dessa cidade: \n");
   scanf("%d", &pontoturisticoA, &pontoturisticoB);
 
-  printf("Estado: %s\n", estado1);
-  printf("Cidade: %s\n", nomedacidadeA);
-  printf("Código: %s\n", codigodacartaA);
-  printf("População: %f\n", populacaoA);
-  printf("Área Km²: %f\n", areakm2A);
-  printf("PIB: %f\n", pibA);
-  printf("Pontos Turísticos: %d\n", pontoturisticoA);
-
-
-
   // Área para exibição dos dados da cidade
 
+  printf("Estado: %s\n", estado1, estado2);
+  printf("Cidade: %s\n", nomedacidadeA, nomedacidadeB);
+  printf("Código: %s\n", codigodacartaA, codigodacartaB);
+  printf("População: %d\n", populacaoA, populacaoB);
+  printf("Área Km²: %.2f\n", areakm2A, areakm2B);
+  printf("PIB: %.2f\n", pibA, pibB);
+  printf("Pontos Turísticos: %d\n", pontoturisticoA, pontoturisticoB);
   
 
 
